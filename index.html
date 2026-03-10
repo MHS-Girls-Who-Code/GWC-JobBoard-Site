@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Board</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<h1>💼 Job Board</h1>
+<p>Find your next opportunity</p>
+</header>
+
+<section class="search-section">
+<input type="text" id="searchInput" placeholder="Search jobs...">
+</section>
+
+<section class="job-container" id="jobContainer"></section>
+
+<section class="post-job">
+<h2>Post a Job</h2>
+
+<form id="jobForm">
+<input type="text" id="title" placeholder="Job Title" required>
+<input type="text" id="company" placeholder="Company" required>
+<input type="text" id="location" placeholder="Location" required>
+
+<select id="type">
+<option value="Full-Time">Full-Time</option>
+<option value="Part-Time">Part-Time</option>
+<option value="Remote">Remote</option>
+<option value="Contract">Contract</option>
+</select>
+
+<textarea id="description" placeholder="Job Description" required></textarea>
+
+<button type="submit">Post Job</button>
+</form>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
